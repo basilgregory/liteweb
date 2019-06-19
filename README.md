@@ -7,7 +7,7 @@ Install a webserver like nginx or Apache to run the website.
 
 Add jquery to the default html file
 ```html
-<script src="js/jquery.min.js?v=<CURRENT_VERSION>"></script>
+<script src="js/jquery.min.js"></script>
 ```
 Add liteweb
 ``` html
