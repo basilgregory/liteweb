@@ -20,8 +20,17 @@ Add the following code to default html page at the location where you want the i
 ```html
 <page></page>
 ```
+## Adding Home page
 
-## Adding Pages
+Home page should be named as \_home.html.
+
+Now you can anchor tags as follows to link to the file.
+
+```html
+<a href="#home">Link to home</a>
+```
+
+## Adding inner pages
 
 Name the inner pages in the format \_<FILE_NAME>.html.
 
