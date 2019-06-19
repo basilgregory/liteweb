@@ -15,7 +15,7 @@ Add liteweb
 ```
 _Do note that the version mentioned here is version of the website and not of liteweb. This will ensure whenever there is a change in html files, they will show up properly without caching affecting the reload._
 
-Add the following code to default html page at the lcoation where you want the inner htmls to show up.
+Add the following code to default html page at the location where you want the inner htmls to show up.
 
 ```html
 <page></page>
