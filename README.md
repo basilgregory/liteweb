@@ -13,7 +13,7 @@ Add liteweb
 ``` html
 <script src="js/liteweb.min.js?v=<YOUR_WEBSITE_VERSION"></script>
 ```
-_Do note that the version mentioned here is version of the webiste and not of liteweb._
+_Do note that the version mentioned here is version of the website and not of liteweb. This will ensure whenever there is a change in html files, they will show up properly without caching affecting the reload._
 
 Add the following code to default html page at the lcoation where you want the inner htmls to show up.
 
