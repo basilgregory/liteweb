@@ -9,6 +9,13 @@ Add jquery to the default html file
 ```html
 <script src="js/jquery.min.js"></script>
 ```
+
+For IE support, use URLSearchParams polyfill from https://github.com/jerrybendy/url-search-params-polyfill. The same is minified and included in Example/js folder
+
+```html
+<script src="js/urlsearchparams.min.js"></script>
+```
+
 Add liteweb
 ``` html
 <script src="js/liteweb.min.js?v=<YOUR_WEBSITE_VERSION"></script>
