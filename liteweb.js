@@ -4,13 +4,13 @@
  * @since 1.0 
  * @copyright MIT License
  * @file: liteweb.js
- * @version 1.2.1
+ * @version 1.2.2
  * @author Robin Alex Panicker
 **/
 
 /** IMPORTANT: NEED TO DEPLOY THE SITE IN A WEBSERVER TO GET ROUTING WORKING **/
 
-// Get params
+// Get params. See README for IE support
 const q = new URLSearchParams (document.currentScript.src.split('?')[1]);
 
 // current version
