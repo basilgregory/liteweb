@@ -4,29 +4,30 @@
  * @since 1.0 
  * @copyright MIT License
  * @file: liteweb.js
- * @version 1.0
+ * @version 1.1
  * @author Robin Alex Panicker
 **/
 
 /** IMPORTANT: NEED TO DEPLOY THE SITE IN A WEBSERVER TO GET ROUTING WORKING **/
 
+// Get params
+const q = new URLSearchParams (document.currentScript.src.split('?')[1]);
+
 // current version
-const v = (new URLSearchParams (document.currentScript.src.split('?')[1])).get('v');
+const v = q.get('v');
 
 // default page (home page) _home.html
-const d = "home";
+const d = q.get('d') != null ? q.get('d') : "home";
 
 const g = function(f) {$.get('_'+f+'.html?v='+v, function(c){$('page').html(c)})}
 
-const l = function(f) {
+const l = function() {
     let p = window.location.hash;
     g((p === null || p.length <= 1) ? d : p.substring(1, p.length)); 
 }
 
-const r = function(){l()};
-
 // load home page
-$(document).ready(r);
+$(document).ready(l);
 
 // routing based on hash change
-$(window).on('hashchange',r);
+$(window).on('hashchange',l);
