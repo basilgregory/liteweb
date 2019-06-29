@@ -4,7 +4,7 @@
  * @since 1.0 
  * @copyright MIT License
  * @file: liteweb.js
- * @version 1.2.2
+ * @version 1.2.3
  * @author Robin Alex Panicker
 **/
 
@@ -24,6 +24,8 @@ const g = function(f) {$.get('_'+f+'.html?v='+v, function(c){$('page').html(c)})
 const l = function() {
     let p = window.location.hash;
     g((p === null || p.length <= 1) ? d : p.substring(1, p.length)); 
+	$("a").removeClass("lw-a-current");
+	if (window.location.hash) $("a[href='"+window.location.hash+"']").addClass("lw-a-current");
 }
 
 // load home page
