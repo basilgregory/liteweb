@@ -56,6 +56,17 @@ Now you can anchor tags as follows to link to the file.
 ```html
 <a href="#<FILE_NAME">Link to FILE_NAME</a>
 ```
+## Adding css for current link
+
+To highlight the current link, add a css class __lw-a-current__ to your project.
+
+Check example.css in the Example project
+
+```css
+.lw-a-current {
+	border-bottom: 2px solid red;
+}
+```
 
 ## Final Step
 
